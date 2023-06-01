@@ -1,0 +1,130 @@
+﻿body {
+    height: 100vh;
+    width: 100vw;
+}
+
+.titulo {
+    padding:20px 0;
+    text-align: center;
+    background:rgb(25 23 23);
+    color:white;
+
+}
+
+.Filtro {
+    display: flex;
+    padding-left: 3%;
+    width:270px;
+    margin-bottom:10px;
+}        
+.Filtro input{
+   
+}
+
+.container-carrusel {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 15vh;
+    overflow: hidden;
+    flex-direction:column;
+}
+
+.div-carrusel-usuarios {
+    width: 100%;
+    padding: 0 2%;
+}
+
+
+    .div-carrusel-usuarios .slick-prev {
+        left: 20px;
+        color: black !important;
+        text-decoration: none;
+        z-index:1;
+    }
+
+    .div-carrusel-usuarios .slick-next {
+        right: 25px;
+        color: black !important;
+        text-decoration: none;
+        z-index: 1;
+    }
+
+    .div-carrusel-usuarios .slick-prev:before {
+        left: 20px;
+        color: black !important;
+        text-decoration: none;
+        font-size: 30px;
+        z-index: 1;
+    }
+
+    .div-carrusel-usuarios .slick-next:before {
+        right: 25px;
+        color: black !important;
+        text-decoration: none;
+        font-size: 30px;
+        z-index: 1;
+    }
+
+.slick-dots {
+    position: unset;
+}
+
+.card {
+    margin: 0 10px;
+    overflow:hidden;
+}
+
+
+.div-personas {
+    position: relative;
+    color: white;
+    z-index: 1;
+    height: 500px;
+}
+
+
+
+.overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgb(0 0 0/0.4);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding: 0 20px;
+}
+
+    .overlay span {
+        font-size: 15px;
+        margin-bottom: 4%;
+        user-select: text;
+    }
+
+    .overlay h5 {
+        text-decoration: underline;
+    }
+
+.div-imagen {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+    .div-imagen img {
+        width: 100%;
+        height: 100%;
+    }
+
+
+    @media(max-width:695px){
+        .card h3 {
+            font-size: 22px;
+        }
+    }
